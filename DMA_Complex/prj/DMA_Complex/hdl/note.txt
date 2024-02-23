@@ -1,0 +1,24 @@
+    White_ILA White_ILA (
+    .clk(Pre_CLK), 
+    .probe0(  Pre_de               ),//1
+    .probe1(  Pre_Vsync		       ),//1
+	.probe2(  Calcu_Kaver		   ),//1
+	.probe3(  Pre_Pixel_R		   ),//8
+	.probe4(  Pre_Pixel_G		   ),//8
+	.probe5(  Pre_Pixel_B		   ),//8
+	.probe6(  Kaver_vaild    	   ),//1
+	.probe7(  Aver_R         	   ),//11
+	.probe8(  Aver_G         	   ),//11
+	.probe9(  Aver_B         	   ),//11
+	.probe9(  K_Sum         	   ),//33
+	.probe9(  Aver_K         	   ),//33
+	.probe9(  Multi_RxKaver        ),//19
+	.probe9(  Multi_GxKaver        ),//19
+	.probe9(  Multi_BxKaver        ),//19
+	.probe9(  Delay_Pre_de         ),//3
+	.probe9(  Post_Pixel_R         ),//8
+	.probe9(  Post_Pixel_G         ),//8
+	.probe9(  Post_Pixel_B         ),//8
+	.probe9(  Post_de              ),//1
+	.probe0(  Div_BxKaver_vaild    ) //1
+    );

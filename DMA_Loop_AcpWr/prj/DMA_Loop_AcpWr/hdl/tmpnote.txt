@@ -1,0 +1,25 @@
+    AXI_ILA AXI_ILA (
+    .clk(M_AXI_ACLK), // input wire clk
+    
+    .probe0(  I_wr_index           ), //8
+    .probe1(  I_rd_start           ), //1
+    .probe2(  I_D_Size             ), //24
+    .probe3(  O_Post_Start         ), //1
+    .probe4(  O_Post_data          ), //16
+    .probe5(  I_Post_de            ), //1
+    .probe6(  I_Post_vs            ), //1
+    .probe7(  rd_index_ptr         ), //8
+    .probe8(  rd_base_addr         ), //32
+    .probe9(  rd_start_cycle       ), //1
+    .probe10( rd_brust_Req         ), //1
+    .probe11( axi_arvalid          ), //1 
+    .probe12( M_AXI_ARREADY        ), //1 
+    .probe13( axi_araddr           ), //32
+    .probe14( D_Total_Frame_Offset ), //25
+    .probe15( D_rd_burst_times     ), //25
+    .probe16( rd_brust_end         ), //1
+    .probe17( rd_brust_start       ), //24
+    .probe18( rd_brust_now         ), //8
+    .probe19( Post_vcnt            ), //12
+    .probe20( Post_hcnt            )  //12
+);
